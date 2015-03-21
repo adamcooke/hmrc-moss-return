@@ -14,18 +14,18 @@ moss_return = HMRCMOSS::Return.new('Q1/2015')
 
 # Add any sales which you made FROM the UK to other member states.
 moss_return.supplies_from_uk do
-  line 'AT', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line 'DE', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line 'FR', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line 'NL', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line 'AT', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line 'DE', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line 'FR', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line 'NL', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
 end
 
 # Add any sales made from fixed establishments in other member states.
 moss_return.supplies_from_outside_uk do
-  line '123123123', 'AT', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', 'DE', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', 'FR', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', 'NL', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line '123123123', 'AT', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line '123123123', 'DE', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line '123123123', 'FR', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
+  line '123123123', 'NL', :rate_type => 'standard', :rate => 20, :total_sales => 2000, :vat_due => 10
 end
 
 # Save the restuling file
