@@ -33,9 +33,6 @@ describe HMRCMOSS::Return do
       expect(supply.class).to eq(HMRCMOSS::UKSupply)
       expect(supply.country).to eq('DE')
       expect(supply.rate_type).to eq('standard')
-      expect(supply.rate).to eq(20)
-      expect(supply.total_sales).to eq(2000)
-      expect(supply.vat_due).to eq(20)
     end
   end
 
@@ -59,9 +56,6 @@ describe HMRCMOSS::Return do
       expect(supply.vat_number).to eq('123 123 123')
       expect(supply.country).to eq('DE')
       expect(supply.rate_type).to eq('standard')
-      expect(supply.rate).to eq(20)
-      expect(supply.total_sales).to eq(2000)
-      expect(supply.vat_due).to eq(20)
     end
   end
 

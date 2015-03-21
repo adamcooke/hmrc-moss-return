@@ -6,27 +6,29 @@ module HMRCMOSS
     end
 
     def country
-      @attributes[:country]
+      @attributes[:country].to_s
     end
 
     def rate_type
-      @attributes[:rate_type]
+      @attributes[:rate_type].to_s
     end
 
     def rate
-      @attributes[:rate]
+      numeric_value(@attributes[:rate].to_f)
     end
 
     def total_sales
-      @attributes[:total_sales]
+      numeric_value(@attributes[:total_sales])
     end
 
     def vat_due
-      @attributes[:vat_due]
+      numeric_value(@attributes[:vat_due])
     end
 
-    def valid?
-      !!(country && rate_type && rate && total_sales && vat_due)
+    private
+
+    def numeric_value(value)
+      "%.2f" % value.to_f
     end
 
   end

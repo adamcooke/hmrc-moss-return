@@ -10,7 +10,7 @@ module HMRCMOSS
     end
 
     def vat_number
-      @attributes[:vat_number]
+      @attributes[:vat_number].to_s
     end
 
     class DSL

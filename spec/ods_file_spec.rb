@@ -6,7 +6,7 @@ describe HMRCMOSS::ODSFile do
   subject(:moss_return) do
     moss_return = HMRCMOSS::Return.new('Q1/2015')
     moss_return.supplies_from_uk do
-      line 'DE', :rate_type => 'potatoland', :rate => 20, :total_sales => 671617, :vat_due => 20
+      line 'DE', :rate_type => 'potatoland', :rate => 20, :total_sales => 671617.55, :vat_due => 20
       line 'FR', :rate_type => 'standard', :rate => 25, :total_sales => 1000, :vat_due => 10
     end
     moss_return
@@ -28,7 +28,7 @@ describe HMRCMOSS::ODSFile do
     expect(subject.content).to_not include('{{uk:period}}')
     expect(subject.content).to_not include('{{f:period}}')
     expect(subject.content).to include('potatoland')
-    expect(subject.content).to include('671617')
+    expect(subject.content).to include('671617.55')
   end
 
   it "should save the completed file to disk" do
