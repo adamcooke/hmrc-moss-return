@@ -1,4 +1,4 @@
-# HMRC VAT MOSS Return Generator (HVMRG)
+# HMRC VAT MOSS Return Generator
 
 This library helps you generate a VAT MOSS Return from Ruby. In HMRC's infinate
 wisdom, they have decided that users must submit returns in a formatted ODS file.
