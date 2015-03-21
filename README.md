@@ -22,10 +22,10 @@ end
 
 # Add any sales made from fixed establishments in other member states.
 moss_return.supplies_from_outside_uk do
-  line '123123123', AT', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', DE', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', FR', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
-  line '123123123', NL', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line '123123123', 'AT', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line '123123123', 'DE', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line '123123123', 'FR', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
+  line '123123123', 'NL', :type => 'standard', :rate => 20, :value => 2000, :amount => 10
 end
 
 # Save the restuling file
