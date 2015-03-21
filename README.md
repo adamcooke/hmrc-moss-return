@@ -36,7 +36,7 @@ moss_return.ods_file.save('path/to/return.ods')
 
 The resulting ODS file is based on the template provided by HMRC.
 
-![Example](https://s.adamcooke.io/15/y7funP.png)
+![Example](https://s.adamcooke.io/15/ORCUOF.png)
 
 ## Important Notes
 
