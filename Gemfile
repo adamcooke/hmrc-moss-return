@@ -1,6 +1,5 @@
 source "https://rubygems.org"
-gem 'rubyzip'
-gem 'nokogiri'
+gemspec
 group :development do
   gem 'rspec'
 end
