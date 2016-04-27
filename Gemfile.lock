@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     hmrc-moss-return (1.0.0)
-      rubyzip (> 1.0, < 2.0)
+      rubyzip (> 1.0)
 
 GEM
   remote: https://rubygems.org/
